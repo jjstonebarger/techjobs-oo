@@ -62,7 +62,7 @@ public class ListController {
 
     @RequestMapping(value = "jobs")
     public String listJobsByColumnAndValue(Model model,
-            @RequestParam JobFieldType column, @RequestParam String name) {
+                                           @RequestParam JobFieldType column, @RequestParam String name) {
 
         ArrayList<Job> jobs = jobData.findByColumnAndValue(column, name);
 
@@ -83,3 +83,5 @@ public class ListController {
         return "list-jobs";
     }
 }
+
+

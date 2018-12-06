@@ -4,17 +4,17 @@
 </head>
 <body>
 
-    <div th:replace="fragments :: page-header"></div>
+<div th:replace="fragments :: page-header"></div>
 
-    <div class="container body-content">
-        <h1>TechJobs</h1>
+<div class="container body-content">
+    <h1>TechJobs</h1>
 
-        <p>View jobs by:</p>
-        <ul>
-            <li><a th:href="@{/search}">Search</a></li>
-            <li><a th:href="@{/list}">List</a></li>
-        </ul>
-    </div>
+    <p>View jobs by:</p>
+    <ul>
+        <li><a th:href="@{/search}">Search</a></li>
+        <li><a th:href="@{/list}">List</a></li>
+    </ul>
+</div>
 
 </body>
 </html>

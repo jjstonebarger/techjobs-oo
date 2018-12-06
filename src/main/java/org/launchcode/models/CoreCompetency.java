@@ -9,3 +9,4 @@ public class CoreCompetency extends JobField {
         super(value);
     }
 }
+

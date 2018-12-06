@@ -4,17 +4,17 @@
 </head>
 <body>
 
-    <div th:replace="fragments :: page-header"></div>
+<div th:replace="fragments :: page-header"></div>
 
-    <div class="container body-content">
-        <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
-        <h2>View All</h2>
-        <ul>
-            <li th:each="field : ${fields}">
-                <a th:href="@{/list/values(column=${field})}" th:text="${field.name}"></a>
-            </li>
-        </ul>
-    </div>
+<div class="container body-content">
+    <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
+    <h2>View All</h2>
+    <ul>
+        <li th:each="field : ${fields}">
+            <a th:href="@{/list/values(column=${field})}" th:text="${field.name}"></a>
+        </li>
+    </ul>
+</div>
 
 </body>
 </html>
